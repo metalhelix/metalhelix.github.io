@@ -1,0 +1,19 @@
+h1. Cover Me!
+
+Meant to answer the question: "So how much coverage is that?"
+
+Heck, I don't know. But probably a computer could figure that out. 
+
+Turns out, its pretty easy for computers to remember this stuff. 
+
+"Cover Me!":http://metalhelix.github.io/coverme/
+
+h2. Use at your own peril
+
+These are all very simple calculations. 
+
+Numbers could be wrong. Numbers might not be right for your problem.
+
+Don't blame the numbers. 
+
+

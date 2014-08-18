@@ -1,0 +1,23 @@
+
+#title-main {
+  padding-left: 30px;
+  background: #fff url(../img/run.png) no-repeat;
+}
+
+.coverage_main {
+  font-size: 5.0em;
+  font-weight: bold;
+}
+
+.coverage_alt {
+  font-size: 0.4em;
+}
+
+#coverage {
+  padding: 30px 60px 10px 60px;
+}
+
+#footer {
+  padding-top: 40px;
+  text-align: center;
+}

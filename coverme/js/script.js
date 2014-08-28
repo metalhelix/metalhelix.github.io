@@ -53,15 +53,15 @@ function CoverCtrl($scope, $location) {
   {'name':'MiSeq', 'id':'miseq', 'reads':8000000}
   ];
   $scope.organisms = [
-  {"name":"Homo sapien", "id":"hs", "genome_size":3200000000, "transcriptome_size":73418700},
+  {"name":"Homo sapiens", "id":"hs", "genome_size":3200000000, "transcriptome_size":73418700},
   {"name":"Mus musculus", "id":"mm", "genome_size":2600000000, "transcriptome_size":64072097},
   {"name":"Drosophila melanogaster", "id":"dm", "genome_size":137000000, "transcriptome_size":33407807},
   {"name":"Arabidopsis thaliana", "id":"at", "genome_size":100000000, "transcriptome_size":0},
   {"name":"Caenorhabditis elegans", "id":"ce", "genome_size":97000000, "transcriptome_size":26465725},
   {"name":"Saccharomyces cerevisiae", "id":"sc", "genome_size":12100000, "transcriptome_size":8767705},
   {"name":"Escherichia coli", "id":"ec", "genome_size":4600000, "transcriptome_size":0},
-  {"name":"Pombe", "id":"po", "genome_size":12500000, "transcriptome_size":0},
-  {"name":"Zebrafish", "id":"dr", "genome_size":1200000000, "transcriptome_size":0},
+  {"name":"Schizosaccharomyces pombe", "id":"po", "genome_size":12500000, "transcriptome_size":0},
+  {"name":"Danio rerio", "id":"dr", "genome_size":1200000000, "transcriptome_size":0},
   {"name":"Phi X", "id":"px", "genome_size":5386, "transcriptome_size":0}
     ];
   $scope.sequence_types = [
@@ -69,7 +69,7 @@ function CoverCtrl($scope, $location) {
   {"name":"Transcriptome", "id":"transcriptome_size", "recommended":15}
   ];
   $scope.coverage_sentiments = [
-    ["Woa there! slow down and save some money!", "Ease off the breaks man, we don't have enough space for all that data!", "Listen, we all love science, but this might be a bit overkill."],
+    ["Whoa there! slow down and save some money!", "Ease off the breaks man, we don't have enough space for all that data!", "Listen, we all love science, but this might be a bit overkill."],
     ["Looks like you are in the clear. Go make some science", "Sounds about right. You're cool.", "Nailed it. Now when are those samples coming?"],
     ["Eh, you're close - might want to bump it up a bit.", "You could probably make it with this if you get lucky", "Squeaking by are we? Budget cuts, I get it."],
     ["No chance. Why even do science in the first place?", "Game over man, game over.", "I see the words 'results unclear' in your future."]

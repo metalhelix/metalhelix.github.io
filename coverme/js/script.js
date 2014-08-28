@@ -49,8 +49,8 @@ function numberToWords(number) {
 function CoverCtrl($scope, $location) {
   $scope.techs = [
   {'name':'HiSeq Normal', 'id':'hiseq', 'reads':186000000},
-  {'name':'HiSeq Fast Mode', 'id':'fast', 'reads':70000000},
-  {'name':'MiSeq', 'id':'miseq', 'reads':8000000}
+  {'name':'HiSeq Rapid Run', 'id':'fast', 'reads':70000000},
+  {'name':'MiSeq', 'id':'miseq', 'reads':15000000}
   ];
   $scope.organisms = [
   {"name":"Homo sapiens", "id":"hs", "genome_size":3200000000, "transcriptome_size":73418700},

@@ -50,6 +50,8 @@ function CoverCtrl($scope, $location) {
   $scope.techs = [
   {'name':'HiSeq Normal', 'id':'hiseq', 'reads':186000000},
   {'name':'HiSeq Rapid Run', 'id':'fast', 'reads':70000000},
+  {'name':'NextSeq Mid Output', 'id':'nsmid', 'reads':260000000},
+  {'name':'NextSeq High Output', 'id':'nshi', 'reads':400000000},
   {'name':'MiSeq', 'id':'miseq', 'reads':15000000}
   ];
   $scope.organisms = [

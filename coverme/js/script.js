@@ -53,15 +53,16 @@ function CoverCtrl($scope, $location) {
   {'name':'MiSeq', 'id':'miseq', 'reads':15000000}
   ];
   $scope.organisms = [
-  {"name":"Homo sapiens", "id":"hs", "genome_size":3200000000, "transcriptome_size":73418700},
-  {"name":"Mus musculus", "id":"mm", "genome_size":2600000000, "transcriptome_size":64072097},
-  {"name":"Drosophila melanogaster", "id":"dm", "genome_size":137000000, "transcriptome_size":33407807},
+  {"name":"Homo sapiens", "id":"hs", "genome_size":3200000000, "transcriptome_size":77751795},
+  {"name":"Mus musculus", "id":"mm", "genome_size":2600000000, "transcriptome_size":65216380},
+  {"name":"Drosophila melanogaster", "id":"dm", "genome_size":137000000, "transcriptome_size":35360612},
   {"name":"Arabidopsis thaliana", "id":"at", "genome_size":100000000, "transcriptome_size":0},
-  {"name":"Caenorhabditis elegans", "id":"ce", "genome_size":97000000, "transcriptome_size":26465725},
-  {"name":"Saccharomyces cerevisiae", "id":"sc", "genome_size":12100000, "transcriptome_size":8767705},
+  {"name":"Caenorhabditis elegans", "id":"ce", "genome_size":97000000, "transcriptome_size":26674675},
+  {"name":"Saccharomyces cerevisiae", "id":"sc", "genome_size":12100000, "transcriptome_size":8832031},
   {"name":"Escherichia coli", "id":"ec", "genome_size":4600000, "transcriptome_size":0},
-  {"name":"Schizosaccharomyces pombe", "id":"po", "genome_size":12500000, "transcriptome_size":0},
-  {"name":"Danio rerio", "id":"dr", "genome_size":1200000000, "transcriptome_size":0},
+  {"name":"Schizosaccharomyces pombe", "id":"po", "genome_size":12500000, "transcriptome_size":8173821},
+  {"name":"Danio rerio", "id":"dr", "genome_size":1200000000, "transcriptome_size":29535518},
+  {"name":"Gallus gallus","id":"gg", "genome_size":1050000000, "transcriptome_size":13466740},
   {"name":"Phi X", "id":"px", "genome_size":5386, "transcriptome_size":0}
     ];
   $scope.sequence_types = [

@@ -45,31 +45,44 @@ function numberToWords(number) {
   return output
 }
 
+//../../../coverme_sizes/summary.11-01-2019.txt
 
 function CoverCtrl($scope, $location) {
   $scope.techs = [
-  {'name':'HiSeq Normal', 'id':'hiseq', 'reads':186000000},
-  {'name':'HiSeq Rapid Run', 'id':'fast', 'reads':70000000},
-  {'name':'NextSeq Mid Output', 'id':'nsmid', 'reads':260000000},
+  {'name':'NovaSeq SP*', 'id':'novasp', 'reads':650000000},
+  {'name':'NovaSeq S1', 'id':'novas1', 'reads':1300000000},
+  {'name':'NovaSeq S2', 'id':'novas2', 'reads':3300000000},
+  {'name':'NovaSeq S3', 'id':'novas3', 'reads':8000000000},
+  {'name':'HiSeq High Output', 'id':'hiseq', 'reads':250000000},
+  {'name':'HiSeq Rapid Run', 'id':'fast', 'reads':300000000},
   {'name':'NextSeq High Output', 'id':'nshi', 'reads':400000000},
-  {'name':'MiSeq', 'id':'miseq', 'reads':15000000}
+  {'name':'NextSeq Mid Output', 'id':'nsmid', 'reads':130000000},
+  {'name':'MiSeq v3', 'id':'miseq3', 'reads':22000000}
+  {'name':'MiSeq v2', 'id':'miseq2', 'reads':12000000},
   ];
   $scope.organisms = [
-  {"name":"Homo sapiens", "id":"hs", "genome_size":3200000000, "transcriptome_size":77751795},
-  {"name":"Mus musculus", "id":"mm", "genome_size":2600000000, "transcriptome_size":65216380},
-  {"name":"Drosophila melanogaster", "id":"dm", "genome_size":137000000, "transcriptome_size":35360612},
-  {"name":"Arabidopsis thaliana", "id":"at", "genome_size":100000000, "transcriptome_size":0},
-  {"name":"Caenorhabditis elegans", "id":"ce", "genome_size":97000000, "transcriptome_size":26674675},
-  {"name":"Saccharomyces cerevisiae", "id":"sc", "genome_size":12100000, "transcriptome_size":8832031},
-  {"name":"Escherichia coli", "id":"ec", "genome_size":4600000, "transcriptome_size":0},
-  {"name":"Schizosaccharomyces pombe", "id":"po", "genome_size":12500000, "transcriptome_size":8173821},
-  {"name":"Danio rerio", "id":"dr", "genome_size":1200000000, "transcriptome_size":29535518},
-  {"name":"Gallus gallus","id":"gg", "genome_size":1050000000, "transcriptome_size":13466740},
-  {"name":"Phi X", "id":"px", "genome_size":5386, "transcriptome_size":0}
+  {"name":"Homo sapiens", "id":"hg38", "genome_size":3100000000, "transcriptome_size":85000000, "transcriptome_size_unspliced":1300000000},
+  {"name":"Mus musculus", "id":"mm10", "genome_size":2700000000, "transcriptome_size":78000000,"transcriptome_size_unspliced":1000000000},
+  {"name":"Drosophila melanogaster", "id":"dm6", "genome_size":140000000, "transcriptome_size":35000000,"transcriptome_size_unspliced":94000000},
+  {"name":"Caenorhabditis elegans", "id":"ce11", "genome_size":100000000, "transcriptome_size":29000000,"transcriptome_size_unspliced":63000000},
+  {"name":"Saccharomyces cerevisiae", "id":"sacCer3", "genome_size":12000000, "transcriptome_size":8800000,"transcriptome_size_unspliced":8800000},
+  {"name":"Schizosaccharomyces pombe","id":"pombe_ASM294v2", "genome_size":13000000, "transcriptome_size":11000000,"transcriptome_size_unspliced":11000000},
+  {"name":"Danio rerio", "id":"danRer11", "genome_size":1400000000, "transcriptome_size":71000000,"transcriptome_size_unspliced":770000000},
+  {"name":"Gallus gallus","id":"galGal6", "genome_size":1100000000, "transcriptome_size":42000000,"transcriptome_size_unspliced":490000000},
+  {"name":"Petromyzon marinus","id":"petMar2", "genome_size":890000000, "transcriptome_size":13000000,"transcriptome_size_unspliced":130000000},
+  {"name":"Rattus norvegicus","id":"rn6", "genome_size":2900000000, "transcriptome_size":52000000,"transcriptome_size_unspliced":840000000},
+  {"name":"Astyanax mexicanus","id":"astMex_2", "genome_size":1300000000, "transcriptome_size":74000000,"transcriptome_size_unspliced":630000000},
+  {"name":"Xenopus tropicalis","id":"xenTro3", "genome_size":1500000000, "transcriptome_size":37000000,"transcriptome_size_unspliced":420000000},
+  {"name":"Ptychodera flava","id":"pfl_ver1", "genome_size":1200000000, "transcriptome_size":44000000,"transcriptome_size_unspliced":600000000},
+  {"name":"Nematostella vectensis","id":"nemVec1", "genome_size":360000000, "transcriptome_size":29000000,"transcriptome_size_unspliced":110000000},
+  {"name":"Schmidtea mediterranea","id":"smed_dd_g4", "genome_size":770000000, "transcriptome_size":42000000,"transcriptome_size_unspliced":240000000},
+  {"name":"Pomacea canaliculata","id":"pcan_BGI_2018", "genome_size":440000000, "transcriptome_size":76000000,"transcriptome_size_unspliced":300000000},
+  {"name":"Nothobranchius furzeri","id":"nfu_20150522", "genome_size":1200000000, "transcriptome_size":65000000,"transcriptome_size_unspliced":540000000}
     ];
   $scope.sequence_types = [
   {"name":"Genome", "id":"genome_size", "recommended":20},
-  {"name":"Transcriptome", "id":"transcriptome_size", "recommended":15}
+  {"name":"Transcriptome", "id":"transcriptome_size", "recommended":15},
+  {"name":"Transcriptome (unspliced)", "id":"transcriptome_size_unspliced", "recommended":15}
   ];
   $scope.coverage_sentiments = [
     ["Whoa there! slow down and save some money!", "Ease off the breaks man, we don't have enough space for all that data!", "Listen, we all love science, but this might be a bit overkill."],

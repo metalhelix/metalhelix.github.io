@@ -57,8 +57,8 @@ function CoverCtrl($scope, $location) {
   {'name':'HiSeq Rapid Run', 'id':'fast', 'reads':300000000},
   {'name':'NextSeq High Output', 'id':'nshi', 'reads':400000000},
   {'name':'NextSeq Mid Output', 'id':'nsmid', 'reads':130000000},
-  {'name':'MiSeq v3', 'id':'miseq3', 'reads':22000000}
-  {'name':'MiSeq v2', 'id':'miseq2', 'reads':12000000},
+  {'name':'MiSeq v3', 'id':'miseq3', 'reads':22000000},
+  {'name':'MiSeq v2', 'id':'miseq2', 'reads':12000000}
   ];
   $scope.organisms = [
   {"name":"Homo sapiens", "id":"hg38", "genome_size":3100000000, "transcriptome_size":85000000, "transcriptome_size_unspliced":1300000000},

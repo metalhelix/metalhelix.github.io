@@ -35,14 +35,14 @@
           <h3>Flowcell</h3>
           <label>Technology</label>
           <select ng-model="tech" ng-options="t.name for t in techs" ng-change="update_tech()"></select>
-          <label>Reads per Lane</label>
+          <label>Reads per Flowcell</label>
           <input type="text" name='reads_per_lane' id='reads_per_lane' class='input-medium' ng-model='reads_per_lane'>
           <span id='reads_per_lane_text' class="help-block">{{reads_per_lane_text() }}</span>
           <label>Read Length</label>
           <input type="text" id='read_length' class="input-mini" ng-model='read_length'>
-          <label>Number of lanes</label>
-          <input type="text" id='number_of_lanes' class="input-mini" ng-model='lanes'>
-          <label>Samples per lanes</label>
+          <label>Number of Flowcells</label>
+			 <input type="text" id='number_of_lanes' class="input-mini" ng-model='lanes'>&nbsp;{{advice_string()}}
+          <label>Number of Samples</label>
           <input type="text" id='samples_per_lane' class="input-mini" ng-model='samples_per_lane'>
         </div>
         <div class="span3">
@@ -60,7 +60,7 @@
         </div>
       </div>
 
-    </div> <!-- /container -->
+ </div> <!-- /container -->
     <div id="footer" class='container'>
       <div class="row">
         <div class="span9">

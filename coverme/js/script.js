@@ -53,7 +53,7 @@ function CoverCtrl($scope, $location) {
   {'name':'NovaSeq S1', 'id':'novas1', 'reads':1300000000},
   {'name':'NovaSeq S2', 'id':'novas2', 'reads':3300000000},
   {'name':'NovaSeq S3', 'id':'novas3', 'reads':8000000000},
-  {'name':'HiSeq High Output', 'id':'hiseq', 'reads':250000000},
+  {'name':'HiSeq High Output', 'id':'hiseq', 'reads':2000000000},
   {'name':'HiSeq Rapid Run', 'id':'fast', 'reads':300000000},
   {'name':'NextSeq High Output', 'id':'nshi', 'reads':400000000},
   {'name':'NextSeq Mid Output', 'id':'nsmid', 'reads':130000000},
@@ -92,15 +92,15 @@ function CoverCtrl($scope, $location) {
   ];
     
   
-  $scope.tech = $scope.techs[0];
+  $scope.tech = $scope.techs[6];
   $scope.organism = $scope.organisms[0];
-  $scope.sequence_type = $scope.sequence_types[0];
+  $scope.sequence_type = $scope.sequence_types[1];
 
   $scope.reads_per_lane = $scope.tech['reads'];
   $scope.sequence_size = $scope.organism[$scope.sequence_type.id];
   $scope.lanes = 1;
   $scope.samples_per_lane = 1;
-  $scope.read_length = 100;
+  $scope.read_length = 75;
 
   // $scope.$watch('locationPath', function(path) {
   //   $location.path(path);
@@ -195,5 +195,14 @@ function CoverCtrl($scope, $location) {
     }
 
     return cov_string;
+  }
+  $scope.advice_string = function() {
+    var tech = $scope.tech['id'];
+    if(tech == "hiseq") {
+		 advice = "Please choose 0.125 for a single HiSeq lane"
+    } else {
+		 advice = ""
+    }
+    return advice;
   }
 }
